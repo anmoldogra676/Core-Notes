@@ -1,0 +1,39 @@
+The users of a system communicate with the hardware of the system. But the communication can't be direct i.e. a user can't directly give instructions to the hardware to perform various operations because it is very difficult for the user to convert its request or instruction into machine language that is used by the hardware components to understand the instructions. Other problem is that, at a particular time, the user wants to perform a number of tasks but it will be a difficult task for the user to use the hardware efficiently. So, we need some kind of intermediate thing that can help us in accessing the hardware components of the system in an efficient way. So, here comes the role of an Operating System.
+
+An Operating System is a software that acts as an intermediate between the hardware and the user. It is a kind of resource manager that manages both hardware and software resources of a system.
+There can be various resources present in the system and to manage it manually is a very very difficult task. So, we make the use of the Operating System to manage all the resources present in the system.
+
+Apart from resource management, the other thing that the Operating System does is, it provides a platform where other application programs can be published and used. The following is the conceptual view of a common computer system.
+
+
+At level 0, the computer hardware are present and to access this hardware you need to take help from the Operating System which is present at level 1. At the upper level or at level 2, various application software (this software is used by users to perform a specific task like MS word, VLC media player, etc) and system software(this software is used to manage the system resources like assembler, compiler, etc) are present. So, the Operating System is used for the communication of these Softwares with the hardware.
+
+Goals of the Operating System
+There are two types of goals of an Operating System i.e. Primary Goals and Secondary Goal.
+
+Primary Goal: 
+
+The primary goal of an Operating System is to provide a user-friendly and convenient environment. We know that it is not compulsory to use the Operating System, but things become harder when the user has to perform all the process scheduling and converting the user code into machine code is also very difficult. So, we make the use of an Operating System to act as an intermediate between us and the hardware. All you need to do is give commands to the Operating System and the Operating System will do the rest for you. So, the Operating System should be convenient to use.
+Secondary Goal: The secondary goal of an Operating System is efficiency. The Operating System should perform all the management of resources in such a way that the resources are fully utilised and no resource should be held idle if some request to that resource is there at that instant of time.
+So, in order to achieve the above primary and secondary goals, the Operating System performs a number of functions. Let's see them.
+
+
+Functions of an Operating System
+To achieve the goals of an Operating system, the Operating System performs a number of functionalities. They are:
+
+Process Management: 
+
+At a particular instant of time, the CPU may have a number of processes that are in the ready state. But at a time, only one process can be processed by a processor. So, the CPU should apply some kind of algorithm that can be used to provide uniform and efficient access to resources by the processes. The CPU should not give priority to only one process and it should make sure that every process which is in the ready state will be executed. Some of the CPU scheduling algorithms are First Come First Serve, Round Robin, Shortest Job First, Priority Scheduling, etc.
+
+Memory Management: 
+
+For the execution of a process, the whole process is put into the main memory and the process is executed and after the execution of the process, the memory is freed and that memory can be used for other processes. So, it is the duty of the Operating System to manage the memory by allocating and deallocating the memory for the process.
+I/O Device Management: There are various I/O devices that are present in a system. Various processes require access to these resources and the process should not directly access these devices. So, it is the duty of the Operating System to allow the use of I/O devices by the various process that are requiring these resources.
+
+File Mangement: 
+
+There are various files, folders and directory system in a particular computer. All these are maintained and managed by the Operating System of the computer. All these files related information are maintained by using a File Allocation Table or FAT. So, every detail related to the file i.e. filename, file size, file type, etc is stored in the File Allocation Table. Also, it is the duty of the Operating System to make sure that the files should not be opened by some unauthorized access.
+
+Virtual Memory:
+
+ When the size of the program is larger than the main memory then it is the duty of the Operating System to load only frequently used pages in the main memory. This is called Virtual Memory. Read more about Virtual Memory from here.

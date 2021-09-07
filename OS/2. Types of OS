@@ -1,0 +1,99 @@
+1. Batch Operating System
+
+In a Batch Operating System, the similar jobs are grouped together into batches with the help of some operator 
+and these batches are executed one by one. For example, let us assume that we have 10 programs that need to be executed.
+ Some programs are written in C++, some in C and rest in Java. Now, every time when we run these programmes individually
+  then we will have to load the compiler of that particular language and then execute the code. But what if we make a 
+  batch of these 10 programmes. The benefit with this approach is that, for the C++ batch, you need to load the compiler
+   only once. Similarly, for Java and C, the compiler needs to be loaded only once and the whole batch gets executed. 
+   The following image describes the working of a Batch Operating System.
+
+
+Advantages:
+
+The overall time taken by the system to execute all the programmes will be reduced.
+The Batch Operating System can be shared between multiple users.
+Disadvantages:
+
+Manual interventions are required between two batches.
+The CPU utilization is low because the time taken in loading and unloading of batches is very high as compared to 
+execution time.
+2. Time-Sharing Operating System
+In a Multi-tasking Operating System, more than one processes are being executed at a particular time with the help 
+of the time-sharing concept. So, in the time-sharing environment, we decide a time that is called time quantum 
+and when the process starts its execution then the execution continues for only that amount of time and after that, 
+other processes will be given chance for that amount of time only. In the next cycle, the first process
+ will again come for its execution and it will be executed for that time quantum only and again next process will come.
+  This process will continue. The following image describes the working of a Time-Sharing Operating System.
+
+
+Advantages:
+
+Since equal time quantum is given to each process, so each process gets equal opportunity to execute.
+The CPU will be busy in most of the cases and this is good to have case.
+Disadvantages:
+
+Process having higher priority will not get the chance to be executed first because the equal opportunity is given to
+ each process.
+3. Distributed Operating System
+
+In a Distributed Operating System, we have various systems and all these systems have their own CPU, main memory, 
+secondary memory, and resources. These systems are connected to each other using a shared communication network. 
+Here, each system can perform its task individually. The best part about these Distributed Operating System is remote 
+access i.e. one user can access the data of the other system and can work accordingly. So, remote access is possible 
+in these distributed Operating Systems. The following image shows the working of a Distributed Operating System.
+
+
+Advantages:
+
+Since the systems are connected with each other so, the failure of one system can't stop the execution of processes
+ because other systems can do the execution.
+Resources are shared between each other.
+The load on the host computer gets distributed and this, in turn, increases the efficiency.
+Disadvantages:
+
+Since the data is shared among all the computers, so to make the data secure and accessible to few computers, 
+you need to put some extra efforts.
+If there is a problem in the communication network then the whole communication will be broken.
+
+
+4. Embedded Operating System
+
+An Embedded Operating System is designed to perform a specific task for a particular device which is not a computer.
+ For example, the software used in elevators is dedicated to the working of elevators only and nothing else. So, this
+  can be an example of Embedded Operating System. The Embedded Operating System allows the access of device hardware to
+   the software that is running on the top of the Operating System.
+
+Advantages:
+
+Since it is dedicated to a particular job, so it is fast.
+Low cost.
+These consume less memory and other resources.
+Disadvantages:
+
+Only one job can be performed.
+It is difficult to upgrade or is nearly scalable.
+
+
+5. Real-time Operating System
+The Real-time Operating Systems are used in the situation where we are dealing with some real-time data. So, as soon as 
+the data comes, the execution of the process should be done and there should be no dealy i.e. no buffer delays should be 
+there. Real-time OS is a time-sharing system that is based on the concept of clock interrupt. So, whenever you want to
+ process a large number of request in a very short period of time, then you should use Real-time Operating System. For 
+ example, the details of the temperature of the petroleum industry are very crucial and this should be done in real-time
+  and in a very short period of time. A small delay can result in a life-death situation. So, this is done with the help
+   of Real-time Operating System. There are two types of Real-time Operating System:
+
+Hard Real-time: 
+
+In this type, a small delay can lead to drastic change. So, when the time constraint is very important then we use the
+ Hard Real-time.
+Soft Real-time: Here, the time constraint is not that important but here also we are dealing with some real-time data.
+Advantages:
+
+There is maximum utilization of devices and resources.
+These systems are almost error-free.
+Disadvantages:
+
+The algorithms used in Real-time Operating System is very complex.
+Specific device drivers are used for responding to the interrupts as soon as possible.
